@@ -1,0 +1,46 @@
+﻿@model Employee
+<form asp-action="Edit" asp-controller="Employee" method="post">
+    <fieldset>
+        <p>
+            <label asp-for="Id">
+            </label>
+            <input asp-for="Id"readonly/>
+            @*@Html.HiddenFor(e => e.Id)*@
+        </p>
+        <p>
+            <label asp-for="Name">
+            </label>
+            <input asp-for="Name"/>
+        </p>
+        <p>
+            <label asp-for="Email">
+            </label>
+            <input asp-for="Email"/>
+        </p>
+        <p>
+            <label asp-for="Dob">
+            </label>
+            <input asp-for="Dob"/>
+        </p>
+        <p>
+            <label asp-for="Address">
+            </label>
+            <input asp-for="Address"/>
+        </p>
+        <p>
+            <label asp-for="PhoneNumber">
+            </label>
+            <input asp-for="PhoneNumber"/>
+        </p>
+        <p>
+            <label asp-for="City">
+            </label>
+            <input asp-for="City"/>
+        </p>
+        <p>
+            <button type="submit">Edit Employee Details</button>   
+        </p>
+    
+    </fieldset>
+
+</form>

@@ -1,0 +1,17 @@
+﻿@model Employee
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <div>
+            <label>
+                ID
+            </label>
+            @Html.DisplayFor(employee => employee.Id)
+            @Html.EditorFor(employee => employee.Id)
+
+        </div>
+        <div>
+            <button type="submit">Delete Employee</button>
+        </div>
+    </fieldset>
+}
